@@ -11,9 +11,9 @@ This application is a clone of Apple's Stocks application, written in Flutter. T
 
 
 
-|| Real Apple Stocks App| This Clone App|
+|| Real Apple Stocks App| Clone Apple Stocks App|
 |-------|------|-------|
-|General View|<img src="screenshots/realapp1.jpeg" style="border-radius: 15px;width: 400px;"/>|<img src="screenshots/cloneapp1.png" style="border-radius: 15px;width: 400px"/>|
+|General View|<img src="screenshots/realapp1.jpeg" style="border-radius: 15px;" width="400"/>|<img src="screenshots/cloneapp1.png" style="border-radius: 15px;"  width="400"/>|
 |<p>Snap According to Search Text<p>|<img src="screenshots/realapp2.gif" style="border-radius: 15px;width: 400px"/>|<img src="screenshots/cloneapp2.gif" style="border-radius: 15px;width: 400px"/>|
 |<p>Persistent DraggableBottom Sheet And extend Marquee<p>|<img src="screenshots/realapp3.gif" style="border-radius: 15px;width: 400px"/>|<img src="screenshots/cloneapp3.gif" style="border-radius: 15px;width: 400px"/>|
 |<p>Click any element on list and open detail sheet<p>|<img src="screenshots/realapp4.gif" style="border-radius: 15px;width: 400px"/>|<img src="screenshots/cloneapp4.gif" style="border-radius: 15px;width: 400px"/>|
