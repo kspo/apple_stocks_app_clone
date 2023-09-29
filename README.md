@@ -3,13 +3,11 @@
 This application is a clone of Apple's Stocks application, written in Flutter. The application contains static data and does not have remote API integration. The purpose of the application is solely to create a fluid native Apple-like experience and provide education to viewers throughout this process.
 
 ![Static Badge](https://img.shields.io/badge/Author-KSPoyraz-blue)
-
-
+[![Linkedin: nixrajput](https://img.shields.io/badge/Kspoyraz-blue?logo=Linkedin&logoColor=fff)][linkedin]
+![GitHub Licence](https://img.shields.io/github/license/kspo/apple_stocks_app_clone?label=Licence)
+![GitHub last commit](https://img.shields.io/github/last-commit/kspo/apple_stocks_app_clone?label=Last+Commit)
 
 ## 📸 ScreenShots
-
-
-
 
 || Real Apple Stocks App| Clone Apple Stocks App|
 |-------|------|-------|
@@ -36,7 +34,7 @@ This application is a clone of Apple's Stocks application, written in Flutter. T
 
 ## Licensing
 
-- This app is distributed under the GPL-3.0 License.
+- This app is distributed under the MIT License.
 - See the [LICENSE](LICENSE.md) file for details.
 
 ## Connect with Me
@@ -44,7 +42,4 @@ This application is a clone of Apple's Stocks application, written in Flutter. T
 - You can connect with me, If you have any specific inquiries or require further information.
 
 
-[![Linkedin: kaz%C4%B1m-selman-poyraz-0048b7143](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
-)][linkedin]
-
-
+[linkedin]: https://linkedin.com/in/nixrajput
