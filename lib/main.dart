@@ -49,8 +49,6 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen>
     with SingleTickerProviderStateMixin {
-  final String _apiUrl =
-      "http://api.marketstack.com/v1/intraday?access_key=e0b2b01d3d2c4df36ad49d27f3b3b14c&symbols=AAPL,AMZN,GOOG,TSLA,MSFT,BABA,MSTR,IBM,SNAP,FITE,WCLD,WCBR,MOON&limit=20";
   late ScrollController _scrollController;
   double _searchBarHeight = 35;
   int _offset = 0;
@@ -157,30 +155,23 @@ class _HomeScreenState extends State<HomeScreen>
   Stack _buildBody() {
     return Stack(
       children: [
-        NotificationListener<UserScrollNotification>(
-          onNotification: (scrollNotification) {
-            if (scrollNotification.direction == ScrollDirection.idle) {
-              if (_scrollController.offset < 28 &&
-                  _scrollController.offset > 0) {
-                WidgetsBinding.instance.addPostFrameCallback((_) {
-                  _scrollController.animateTo(
-                    0,
-                    duration: const Duration(milliseconds: 200),
-                    curve: Curves.fastOutSlowIn,
-                  );
-                });
-              } else if (_scrollController.offset >= 28 &&
-                  _scrollController.offset < 56) {
-                WidgetsBinding.instance.addPostFrameCallback((_) {
-                  _scrollController.animateTo(
-                    56,
-                    duration: const Duration(milliseconds: 200),
-                    curve: Curves.fastOutSlowIn,
-                  );
-                });
-              }
+        Listener(
+          behavior: HitTestBehavior.translucent,
+          onPointerUp: (e) {
+            if (_scrollController.offset < 28 && _scrollController.offset > 0) {
+              _scrollController.animateTo(
+                0,
+                duration: const Duration(milliseconds: 200),
+                curve: Curves.fastOutSlowIn,
+              );
+            } else if (_scrollController.offset >= 28 &&
+                _scrollController.offset < 56) {
+              _scrollController.animateTo(
+                56,
+                duration: const Duration(milliseconds: 200),
+                curve: Curves.fastOutSlowIn,
+              );
             }
-            return true;
           },
           child: CustomScrollView(
             controller: _scrollController,
