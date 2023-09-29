@@ -29,8 +29,10 @@ This application is a clone of Apple's Stocks application, written in Flutter. T
 
 - Currently, This app' purpose is to educate viewers. So some unnecessary design details and Easily achievable UI patterns have been overlooked in app.
 - If you have any question about this app, feel free to get in touch
-- The app is exclusively available on Android devices.
-- Contributions to the project are highly encouraged, including participation from UI/UX designers.
+- This app uses these AWESOME dependencies ();
+  - [marqueer]
+  - [pull_down_button]
+  - [chart_sparkline]
 
 
 ## Licensing
@@ -45,3 +47,7 @@ This application is a clone of Apple's Stocks application, written in Flutter. T
 
 [linkedin]: https://www.linkedin.com/in/kaz%C4%B1m-selman-poyraz-0048b7143/
 [github]: https://github.com/kspo
+
+[pull_down_button]: https://pub.dev/packages/pull_down_button#pulldownbuttontheme
+[marqueer]: https://pub.dev/packages/marqueer
+[chart_sparkline]: https://pub.dev/packages/chart_sparkline

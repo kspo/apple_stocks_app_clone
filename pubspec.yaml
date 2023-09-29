@@ -11,9 +11,9 @@ dependencies:
     sdk: flutter
   
   cupertino_icons: ^1.0.6
-  http: ^1.1.0
   chart_sparkline: ^1.0.13
   marqueer: ^1.4.1
+  pull_down_button: ^0.9.3
 
 dev_dependencies:
   flutter_test:

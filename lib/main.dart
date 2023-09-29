@@ -9,6 +9,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:marqueer/marqueer.dart';
+import 'package:pull_down_button/pull_down_button.dart';
 
 void main() {
   runApp(const MainApp());
@@ -23,6 +24,24 @@ class MainApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.dark,
       theme: ThemeData(
+        dividerColor: const Color.fromARGB(255, 52, 52, 52),
+        extensions: const [
+          PullDownButtonTheme(
+            dividerTheme: PullDownMenuDividerTheme(
+              dividerColor: Color.fromARGB(255, 21, 21, 21),
+              largeDividerColor: Color.fromARGB(255, 21, 21, 21),
+            ),
+            routeTheme: PullDownMenuRouteTheme(
+              backgroundColor: Color.fromARGB(255, 31, 31, 31),
+            ),
+            itemTheme: PullDownMenuItemTheme(
+              destructiveColor: Colors.red,
+              textStyle: TextStyle(
+                color: Colors.white,
+              ),
+            ),
+          ),
+        ],
         scaffoldBackgroundColor: Colors.black,
         appBarTheme: const AppBarTheme(
           backgroundColor: Colors.black,
@@ -118,6 +137,8 @@ class _HomeScreenState extends State<HomeScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset:
+          false, // This way, bottom sheet will stay behind keyboard
       appBar: _buildAppBar(),
       body: _buildBody(),
       bottomNavigationBar: _buildBottomNavBar(),
@@ -207,19 +228,42 @@ class _HomeScreenState extends State<HomeScreen>
                 sliver: SliverToBoxAdapter(
                   child: Row(
                     children: [
-                      Text(
-                        "My Symbols",
-                        style: TextStyle(
-                          color: Theme.of(context).primaryColor,
-                          fontSize: 19,
-                          fontWeight: FontWeight.w700,
+                      PullDownButton(
+                        itemBuilder: (context) => [
+                          PullDownMenuItem(
+                            onTap: () {},
+                            title: 'My Symbols',
+                          ),
+                          const PullDownMenuDivider.large(),
+                          PullDownMenuItem(
+                            title: 'New List',
+                            onTap: () {},
+                            icon: CupertinoIcons.add,
+                          ),
+                        ],
+                        animationBuilder: null,
+                        position: PullDownMenuPosition.automatic,
+                        buttonBuilder: (context, showMenu) => GestureDetector(
+                          onTap: showMenu,
+                          child: Row(
+                            children: [
+                              Text(
+                                "My Symbols",
+                                style: TextStyle(
+                                  color: Theme.of(context).primaryColor,
+                                  fontSize: 19,
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                              const Icon(
+                                CupertinoIcons.chevron_up_chevron_down,
+                                size: 20,
+                                color: Colors.blue,
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                      const Icon(
-                        CupertinoIcons.chevron_up_chevron_down,
-                        size: 20,
-                        color: Colors.blue,
-                      ),
+                      )
                     ],
                   ),
                 ),
