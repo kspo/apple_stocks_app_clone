@@ -3,7 +3,8 @@
 This application is a clone of Apple's Stocks application, written in Flutter. The application contains static data and does not have remote API integration. The purpose of the application is solely to create a fluid native Apple-like experience and provide education to viewers throughout this process.
 
 ![Static Badge](https://img.shields.io/badge/Author-KSPoyraz-blue)
-[![Linkedin: nixrajput](https://img.shields.io/badge/Kspoyraz-blue?logo=Linkedin&logoColor=fff)][linkedin]
+[![Linkedin: Kspoyraz](https://img.shields.io/badge/Kspoyraz-blue?logo=Linkedin&logoColor=fff)][linkedin]
+[![Github: Kspo](https://img.shields.io/badge/Kspo-white?logo=Github&logoColor=000)][github]
 ![GitHub Licence](https://img.shields.io/github/license/kspo/apple_stocks_app_clone?label=Licence)
 ![GitHub last commit](https://img.shields.io/github/last-commit/kspo/apple_stocks_app_clone?label=Last+Commit)
 
@@ -43,3 +44,4 @@ This application is a clone of Apple's Stocks application, written in Flutter. T
 
 
 [linkedin]: https://www.linkedin.com/in/kaz%C4%B1m-selman-poyraz-0048b7143/
+[github]: https://github.com/kspo
