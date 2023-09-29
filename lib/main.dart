@@ -1,10 +1,8 @@
 import 'dart:convert';
-import 'dart:io';
 import 'dart:math';
 import 'package:apple_stocks_app_clone/news_card.dart';
 import 'package:apple_stocks_app_clone/stock.dart';
 import 'package:chart_sparkline/chart_sparkline.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -393,9 +391,9 @@ class _HomeScreenState extends State<HomeScreen>
 
   NotificationListener<DraggableScrollableNotification> _buildDetailSheet() {
     return NotificationListener<DraggableScrollableNotification>(
-      onNotification: (DraggableScrollableNotification DSNotification) {
-        print("${DSNotification.extent}");
-        if (DSNotification.extent > 0.99) {
+      onNotification: (DraggableScrollableNotification dsNotification) {
+        // print("${dsNotification.extent}");
+        if (dsNotification.extent > 0.99) {
           _marqueeVisible = false;
         } else {
           _marqueeVisible = true;
@@ -748,71 +746,69 @@ class _HomeScreenState extends State<HomeScreen>
             0.5,
           ],
           builder: (BuildContext context, ScrollController scrollController) {
-            return Container(
-              child: SingleChildScrollView(
-                controller: scrollController,
-                child: Container(
-                  decoration: const BoxDecoration(
-                    color: Color.fromARGB(255, 28, 28, 30),
-                    borderRadius: BorderRadius.vertical(
-                      top: Radius.circular(15),
-                    ),
+            return SingleChildScrollView(
+              controller: scrollController,
+              child: Container(
+                decoration: const BoxDecoration(
+                  color: Color.fromARGB(255, 28, 28, 30),
+                  borderRadius: BorderRadius.vertical(
+                    top: Radius.circular(15),
                   ),
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 15.0, vertical: 8),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Container(
-                              width: 35,
-                              height: 5,
-                              decoration: BoxDecoration(
-                                color: const Color.fromARGB(255, 100, 100, 100),
-                                borderRadius: BorderRadius.circular(50),
-                              ),
-                            )
-                          ],
+                ),
+                child: Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 15.0, vertical: 8),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            width: 35,
+                            height: 5,
+                            decoration: BoxDecoration(
+                              color: const Color.fromARGB(255, 100, 100, 100),
+                              borderRadius: BorderRadius.circular(50),
+                            ),
+                          )
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      const Text(
+                        "Business News",
+                        style: TextStyle(
+                          fontSize: 25,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w900,
                         ),
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        const Text(
-                          "Business News",
-                          style: TextStyle(
-                            fontSize: 25,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w900,
-                          ),
-                        ),
-                        const Text(
-                          "From Yahoo Finance",
-                          style: TextStyle(
-                              fontSize: 16,
-                              color: Color.fromARGB(255, 152, 152, 159),
-                              fontWeight: FontWeight.w500,
-                              height: 1.5),
-                        ),
-                        ListView.builder(
-                          physics: const NeverScrollableScrollPhysics(),
-                          shrinkWrap: true,
-                          itemCount: 25,
-                          padding: const EdgeInsets.symmetric(vertical: 20),
-                          itemBuilder: (BuildContext context, int index) {
-                            return const NewsCardWidget(
-                              imageUrl: "assets/btc.jpeg",
-                              title:
-                                  "No surprises in the expected Bitcoin ETF decisions once again.",
-                              summary:
-                                  "The U.S. Securities and Exchange Commission (SEC)...",
-                            );
-                          },
-                        ),
-                      ],
-                    ),
+                      ),
+                      const Text(
+                        "From Yahoo Finance",
+                        style: TextStyle(
+                            fontSize: 16,
+                            color: Color.fromARGB(255, 152, 152, 159),
+                            fontWeight: FontWeight.w500,
+                            height: 1.5),
+                      ),
+                      ListView.builder(
+                        physics: const NeverScrollableScrollPhysics(),
+                        shrinkWrap: true,
+                        itemCount: 25,
+                        padding: const EdgeInsets.symmetric(vertical: 20),
+                        itemBuilder: (BuildContext context, int index) {
+                          return const NewsCardWidget(
+                            imageUrl: "assets/btc.jpeg",
+                            title:
+                                "No surprises in the expected Bitcoin ETF decisions once again.",
+                            summary:
+                                "The U.S. Securities and Exchange Commission (SEC)...",
+                          );
+                        },
+                      ),
+                    ],
                   ),
                 ),
               ),

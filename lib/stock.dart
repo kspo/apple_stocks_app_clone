@@ -23,7 +23,7 @@ class StockList {
 class Stock {
   dynamic open;
   dynamic high;
-  double low;
+  dynamic low;
   dynamic last;
   dynamic close;
   dynamic volume;
