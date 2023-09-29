@@ -28,8 +28,10 @@ This application is a clone of Apple's Stocks application, written in Flutter. T
 ## Development Information
 
 - Currently, This app' purpose is to educate viewers. So some unnecessary design details and Easily achievable UI patterns have been overlooked in app.
+  
 - If you have any question about this app, feel free to get in touch
-- This app uses these AWESOME dependencies ();
+  
+- This app uses these AWESOME dependencies;
   - [marqueer]
   - [pull_down_button]
   - [chart_sparkline]
