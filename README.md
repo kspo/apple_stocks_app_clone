@@ -42,4 +42,4 @@ This application is a clone of Apple's Stocks application, written in Flutter. T
 - You can connect with me, If you have any specific inquiries or require further information.
 
 
-[linkedin]: https://linkedin.com/in/nixrajput
+[linkedin]: https://www.linkedin.com/in/kaz%C4%B1m-selman-poyraz-0048b7143/
