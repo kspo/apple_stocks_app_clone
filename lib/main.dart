@@ -621,72 +621,69 @@ class _HomeScreenState extends State<HomeScreen>
                       ],
                     ),
                   ),
-                  Container(
-                    color: const Color.fromARGB(255, 28, 28, 30),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        const Text(
-                          "BTC-USD",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 25,
-                            fontWeight: FontWeight.w900,
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      const Text(
+                        "BTC-USD",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 25,
+                          fontWeight: FontWeight.w900,
+                        ),
+                      ),
+                      const SizedBox(
+                        width: 20,
+                      ),
+                      const Text(
+                        "Bitcoin USD",
+                        style: TextStyle(
+                          color: Colors.grey,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                      const Spacer(),
+                      Container(
+                        margin: const EdgeInsets.symmetric(vertical: 15),
+                        height: 25,
+                        width: 25,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(50),
+                          color: Theme.of(context).primaryColor,
+                        ),
+                        child: const OverflowBox(
+                          maxWidth: 35,
+                          maxHeight: 35,
+                          child: Icon(
+                            CupertinoIcons.ellipsis_circle_fill,
+                            color: Color.fromARGB(255, 51, 51, 51),
+                            size: 35,
                           ),
                         ),
-                        const SizedBox(
-                          width: 20,
+                      ),
+                      const SizedBox(
+                        width: 20,
+                      ),
+                      Container(
+                        margin: const EdgeInsets.symmetric(vertical: 15),
+                        height: 25,
+                        width: 25,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(50),
+                          color: const Color.fromARGB(255, 178, 178, 178),
                         ),
-                        const Text(
-                          "Bitcoin USD",
-                          style: TextStyle(
-                            color: Colors.grey,
-                            fontSize: 14,
-                            fontWeight: FontWeight.w600,
+                        child: const OverflowBox(
+                          maxWidth: 35,
+                          maxHeight: 35,
+                          child: Icon(
+                            CupertinoIcons.xmark_circle_fill,
+                            color: Color.fromARGB(255, 51, 51, 51),
+                            size: 35,
                           ),
                         ),
-                        const Spacer(),
-                        Container(
-                          margin: const EdgeInsets.symmetric(vertical: 15),
-                          height: 25,
-                          width: 25,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(50),
-                            color: Theme.of(context).primaryColor,
-                          ),
-                          child: const OverflowBox(
-                            maxWidth: 35,
-                            maxHeight: 35,
-                            child: Icon(
-                              CupertinoIcons.ellipsis_circle_fill,
-                              color: Color.fromARGB(255, 51, 51, 51),
-                              size: 35,
-                            ),
-                          ),
-                        ),
-                        const SizedBox(
-                          width: 20,
-                        ),
-                        Container(
-                          margin: const EdgeInsets.symmetric(vertical: 15),
-                          height: 25,
-                          width: 25,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(50),
-                            color: const Color.fromARGB(255, 178, 178, 178),
-                          ),
-                          child: const OverflowBox(
-                            maxWidth: 35,
-                            maxHeight: 35,
-                            child: Icon(
-                              CupertinoIcons.xmark_circle_fill,
-                              color: Color.fromARGB(255, 51, 51, 51),
-                              size: 35,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
+                      ),
+                    ],
                   )
                 ],
               ),
