@@ -729,7 +729,7 @@ class _HomeScreenState extends State<HomeScreen>
     return SizedBox.expand(
       child: NotificationListener<DraggableScrollableNotification>(
         onNotification: (DraggableScrollableNotification dsNotification) {
-          print("${dsNotification.extent}");
+          // print("${dsNotification.extent}");
           if (dsNotification.extent > 0.99) {
             _marqueeVisible = false;
           } else {
