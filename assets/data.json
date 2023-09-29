@@ -1,0 +1,241 @@
+{
+  "pagination": {
+    "limit": 9,
+    "offset": 0,
+    "count": 9,
+    "total": 75484
+  },
+  "data": [
+    {
+      "open": 170.69,
+      "high": 180.43,
+      "low": 160.45,
+      "last": 175.65,
+      "close": 170.16,
+      "volume": 1800.69,
+      "date": "2023-09-27T19:00:00+0000",
+      "symbol": "AAPL",
+      "exchange": "Apple Inc."
+    },
+    {
+      "open": 245.23,
+      "high": 245.67,
+      "low": 234.55,
+      "last": 239.755,
+      "close": 244.12,
+      "volume": 618830.0,
+      "date": "2023-09-27T19:00:00+0000",
+      "symbol": "TSLA",
+      "exchange": "Tesla, Inc."
+    },
+    {
+      "open": 143.53,
+      "high": 143.73,
+      "low": 141.765,
+      "last": 143.13,
+      "close": 143.24,
+      "volume": 87264.0,
+      "date": "2023-09-27T19:00:00+0000",
+      "symbol": "VZ",
+      "exchange": "Verizon Communications"
+    },
+    {
+      "open": 172.63,
+      "high": 173.07,
+      "low": 169.055,
+      "last": 170.07,
+      "close": 171.96,
+      "volume": 1266180.0,
+      "date": "2023-09-27T19:00:00+0000",
+      "symbol": "INTC",
+      "exchange": "Intel Corporation"
+    },
+    {
+      "open": 313.61,
+      "high": 314.03,
+      "low": 309.7,
+      "last": 312.66,
+      "close": 312.14,
+      "volume": 266016.0,
+      "date": "2023-09-27T19:00:00+0000",
+      "symbol": "MSFT",
+      "exchange": "Microsoft Corporation"
+    },
+    {
+      "open": 129.83,
+      "high": 131.23,
+      "low": 129.4,
+      "last": 131.01,
+      "close": 129.45,
+      "volume": 147909.0,
+      "date": "2023-09-27T19:00:00+0000",
+      "symbol": "GOOG",
+      "exchange": "Alphabet Inc."
+    },
+    {
+      "open": 8.37,
+      "high": 8.575,
+      "low": 8.36,
+      "last": 8.495,
+      "close": 8.34,
+      "volume": 247041.0,
+      "date": "2023-09-27T19:00:00+0000",
+      "symbol": "SNAP",
+      "exchange": "SNAP Inc."
+    },
+    {
+      "open": 323.54,
+      "high": 325.98,
+      "low": 310.58,
+      "last": 315.68,
+      "close": 317.3,
+      "volume": 3347.0,
+      "date": "2023-09-27T19:00:00+0000",
+      "symbol": "MSTR",
+      "exchange": "IEXG"
+    },
+    {
+      "open": 126.09,
+      "high": 127.495,
+      "low": 124.14,
+      "last": 126.07,
+      "close": 125.98,
+      "volume": 1027026.0,
+      "date": "2023-09-27T19:00:00+0000",
+      "symbol": "AMZN",
+      "exchange": "IEXG"
+    },
+    {
+      "open": 8.37,
+      "high": 8.575,
+      "low": 8.36,
+      "last": 8.495,
+      "close": 8.34,
+      "volume": 247041.0,
+      "date": "2023-09-27T19:00:00+0000",
+      "symbol": "SNAP",
+      "exchange": "IEXG"
+    },
+    {
+      "open": 323.54,
+      "high": 325.98,
+      "low": 310.58,
+      "last": 315.68,
+      "close": 317.3,
+      "volume": 3347.0,
+      "date": "2023-09-27T19:00:00+0000",
+      "symbol": "MSTR",
+      "exchange": "IEXG"
+    },
+    {
+      "open": 126.09,
+      "high": 127.495,
+      "low": 124.14,
+      "last": 126.07,
+      "close": 125.98,
+      "volume": 1027026.0,
+      "date": "2023-09-27T19:00:00+0000",
+      "symbol": "VZ",
+      "exchange": "NYSE"
+    },
+    {
+      "open": 8.37,
+      "high": 8.575,
+      "low": 8.36,
+      "last": 8.495,
+      "close": 8.34,
+      "volume": 247041.0,
+      "date": "2023-09-27T19:00:00+0000",
+      "symbol": "CSCO",
+      "exchange": "NASDAQ"
+    },
+    {
+      "open": 323.54,
+      "high": 325.98,
+      "low": 310.58,
+      "last": 315.68,
+      "close": 317.3,
+      "volume": 3347.0,
+      "date": "2023-09-27T19:00:00+0000",
+      "symbol": "CAT",
+      "exchange": "NYSE"
+    },
+    {
+      "open": 126.09,
+      "high": 127.495,
+      "low": 124.14,
+      "last": 126.07,
+      "close": 125.98,
+      "volume": 1027026.0,
+      "date": "2023-09-27T19:00:00+0000",
+      "symbol": "BA",
+      "exchange": "NYSE"
+    },
+    {
+      "open": 8.37,
+      "high": 8.575,
+      "low": 8.36,
+      "last": 8.495,
+      "close": 8.34,
+      "volume": 247041.0,
+      "date": "2023-09-27T19:00:00+0000",
+      "symbol": "SNAP",
+      "exchange": "IEXG"
+    },
+    {
+      "open": 323.54,
+      "high": 325.98,
+      "low": 310.58,
+      "last": 315.68,
+      "close": 317.3,
+      "volume": 3347.0,
+      "date": "2023-09-27T19:00:00+0000",
+      "symbol": "MSTR",
+      "exchange": "IEXG"
+    },
+    {
+      "open": 126.09,
+      "high": 127.495,
+      "low": 124.14,
+      "last": 126.07,
+      "close": 125.98,
+      "volume": 1027026.0,
+      "date": "2023-09-27T19:00:00+0000",
+      "symbol": "AMZN",
+      "exchange": "IEXG"
+    },
+    {
+      "open": 8.37,
+      "high": 8.575,
+      "low": 8.36,
+      "last": 8.495,
+      "close": 8.34,
+      "volume": 247041.0,
+      "date": "2023-09-27T19:00:00+0000",
+      "symbol": "SNAP",
+      "exchange": "IEXG"
+    },
+    {
+      "open": 323.54,
+      "high": 325.98,
+      "low": 310.58,
+      "last": 315.68,
+      "close": 317.3,
+      "volume": 3347.0,
+      "date": "2023-09-27T19:00:00+0000",
+      "symbol": "MSTR",
+      "exchange": "IEXG"
+    },
+    {
+      "open": 126.09,
+      "high": 127.495,
+      "low": 124.14,
+      "last": 126.07,
+      "close": 125.98,
+      "volume": 1027026.0,
+      "date": "2023-09-27T19:00:00+0000",
+      "symbol": "AMZN",
+      "exchange": "IEXG"
+    }
+  ]
+}
