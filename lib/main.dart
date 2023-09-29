@@ -116,7 +116,7 @@ class _HomeScreenState extends State<HomeScreen>
 
     setState(() {
       _stockList = StockList.fromJson(map);
-      print(stockListToJson(_stockList));
+      // print(stockListToJson(_stockList));
     });
   }
 
@@ -728,9 +728,9 @@ class _HomeScreenState extends State<HomeScreen>
   SizedBox _buildPersistentSheet() {
     return SizedBox.expand(
       child: NotificationListener<DraggableScrollableNotification>(
-        onNotification: (DraggableScrollableNotification DSNotification) {
-          print("${DSNotification.extent}");
-          if (DSNotification.extent > 0.99) {
+        onNotification: (DraggableScrollableNotification dsNotification) {
+          print("${dsNotification.extent}");
+          if (dsNotification.extent > 0.99) {
             _marqueeVisible = false;
           } else {
             _marqueeVisible = true;
