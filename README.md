@@ -7,8 +7,8 @@ This application is a clone of Apple's Stocks application, written in Flutter. T
 [![Github: Kspo](https://img.shields.io/badge/Kspo-white?logo=Github&logoColor=000)][github]
 ![GitHub Licence](https://img.shields.io/github/license/kspo/apple_stocks_app_clone?label=Licence)
 ![GitHub last commit](https://img.shields.io/github/last-commit/kspo/apple_stocks_app_clone?label=Last+Commit)
-![GitHub stars](https://img.shields.io/github/stars/kspo/apple_stocks_app_clone?label=Stars&color=magenta)
-![GitHub Forks](https://img.shields.io/github/forks/kspo/apple_stocks_app_clone?label=Forks&color=magenta)
+![GitHub stars](https://img.shields.io/github/stars/kspo/apple_stocks_app_clone?label=Github+Stars&color=magenta)
+![GitHub Forks](https://img.shields.io/github/forks/kspo/apple_stocks_app_clone?label=Github+Forks&color=magenta)
 
 ## 📸 ScreenShots
 
