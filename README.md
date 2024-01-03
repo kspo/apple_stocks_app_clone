@@ -19,7 +19,7 @@ This application is a clone of Apple's Stocks application, written in Flutter. T
 |<p>Persistent DraggableBottom Sheet And extend Marquee<p>|<img src="screenshots/realapp3.gif" style="border-radius: 15px;width: 400px"/>|<img src="screenshots/cloneapp3.gif" style="border-radius: 15px;width: 400px"/>|
 |<p>Click any element on list and open detail sheet<p>|<img src="screenshots/realapp4.gif" style="border-radius: 15px;width: 400px"/>|<img src="screenshots/cloneapp4.gif" style="border-radius: 15px;width: 400px"/>|
 
-## App Animations
+## App Animation
 
 - Searchbar scroll and sliver.
 - There are 2 DraggableScrollableSheet. One is persistent, other is depends on clicking any market on the list.
