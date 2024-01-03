@@ -1,7 +1,6 @@
 import 'dart:convert';
 
 StockList stockListFromJson(String str) => StockList.fromJson(json.decode(str));
-
 String stockListToJson(StockList data) => json.encode(data.toJson());
 
 class StockList {
