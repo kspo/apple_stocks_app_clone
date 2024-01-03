@@ -1,6 +1,6 @@
 # Apple Stocks App Clone (Only UI)
 
-This application is a clone of Apple's Stocks application, written in Flutter. The application contains static data and does not have remote API integration. The purpose of the application is solely to create a fluid native Apple-like experience and provide education to viewers throughout this process.
+This application is a clone of Apple's Stocks application, written in Flutter. The application contains static data and does not have remote API integration. The purpose of the application is solely to create a fluid native Apple-like experience and provide education to viewers throughout this process. 
 
 ![Static Badge](https://img.shields.io/badge/Author-KSPoyraz-blue)
 [![Linkedin: Kspoyraz](https://img.shields.io/badge/Kspoyraz-blue?logo=Linkedin&logoColor=fff)][linkedin]
